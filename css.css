@@ -1,0 +1,218 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family:monospace;
+}
+
+body{
+    background-image: url(/img/pruebacuatro.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container-descripcion {
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.container-descripcion .Titulo-Principal{
+    font-size: 30px;
+}
+.container-descripcion .Descripcion-Service{
+    font-size: 20px;
+    padding: 30px;
+}
+
+.Perfil{
+    background-image: url(/img/profile.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 170px; 
+    height: 170px; 
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+
+/* Computadora RESPONSIVE */
+@media only screen and (min-width: 1280px) {
+    /* Estilos para computadoras de escritorio con resoluciones más altas */
+    nav ul{
+        display:flex;
+        justify-content: space-evenly;
+        list-style: none;
+    
+    }
+    label, input {
+        display: none; /* Oculta el label por defecto */
+      }
+    
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight:bold;
+        text-transform: uppercase;
+        
+    
+    }
+    
+    nav ul li a:hover{
+    color: white;
+    font-size: 18px;
+    
+    }
+    nav{
+    padding: 15px;
+    }
+    /* Estilos para tablets */
+}
+
+/* Computadora Tablet y PC Horizontal */
+@media only screen and (min-width: 1024px) {
+    nav ul{
+        display:flex;
+        justify-content: space-evenly;
+        list-style: none;
+    
+    }
+    label, input {
+        display: none; /* Oculta el label por defecto */
+      }
+    
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight:bold;
+        text-transform: uppercase;
+        
+    
+    }
+    
+    nav ul li a:hover{
+    color: white;
+    font-size: 18px;
+    
+    }
+    nav{
+    padding: 15px;
+    }
+}
+
+/* Tablet RESPONSIVE */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    nav ul{
+        display:flex;
+        justify-content: space-evenly;
+        list-style: none;
+    
+    }
+
+    label, input {
+        display: none; /* Oculta el label por defecto */
+      }
+    
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight:bold;
+        text-transform: uppercase;
+        
+    
+    }
+    
+    nav ul li a:hover{
+    color: white;
+    font-size: 18px;
+    
+    }
+    nav{
+    padding: 15px;
+    }
+    /* Estilos para tablets */
+}
+
+/* CELULAR RESPONSIVE */
+@media only screen and (max-width: 600px) {
+
+    ul {
+        display: none;
+        position: absolute; /* Flota el menú a la derecha */
+        margin-top: 40px; /* Ajusta el margen superior según tu diseño */
+        right: 0;
+        border: 1px solid black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra para un efecto más elegante */
+      }
+
+
+      nav ul li a{
+        text-decoration: none;
+        color: black;
+      }
+
+      
+      input:checked ~ ul {
+        display: block;
+      }
+
+      
+      input {
+        display: none;
+       
+      }
+      
+      label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        margin-left: 94%;
+      }
+      
+      /* Estilo del boton cuando se pasa el mouse por encima*/
+      label:hover {
+        background: grey;
+      }
+      
+      /* Estilo del boton cuando el menú está expandido*/
+      input:checked ~ label {
+        background: lightgrey;
+      }
+      
+      ul {
+        margin-top: 0;
+        padding: 0;
+        width: 90px;
+      }
+      
+      li {
+        display: block;
+        background: white;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid black;
+        
+
+      }
+      
+      /* Estilo cuando el mouse pasa encima de cada link del menu*/
+      li:hover {
+        filter: brightness(110%);
+      }
+      
+      
+}
