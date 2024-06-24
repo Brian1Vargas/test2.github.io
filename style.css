@@ -6,7 +6,7 @@ font-family:monospace;
 }
 
 body{
-    background-image: url(/imagenes/pruebacuatro.avif);
+    background-image: url(./imagenes/pruebacuatro.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,7 +28,7 @@ body{
 }
 
 .Perfil{
-    background-image: url(/imagenes/profile.jpg);
+    background-image: url(./imagenes/profile.jpg);
     background-position: center;
     background-size: cover;
     width: 170px; 
